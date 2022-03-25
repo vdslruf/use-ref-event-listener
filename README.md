@@ -17,8 +17,10 @@ function App(){
   const [ state, setState ] = useState(0);
   const ref = useRefEventListener('mousedown', () => setState(s => ++s));
   return (
-    <button ref={ref}>increment</button>
-    <output>{state}</output>
+    <>
+      <button ref={ref}>increment</button>
+      <output>{state}</output>
+    </>
   )
 }
 ```
@@ -30,8 +32,10 @@ function App(){
   const [ state, setState ] = useState(0);
   const ref = useRefEventListener('change', e => setState(e.target.value));
   return (
-    <input ref={ref} />
-    <output>{state}</output> //Like native change events, it dispatches when the change is finalized.
+    <>
+      <input ref={ref} />
+      <output>{state}</output> //Like native change events, it dispatches when the change is finalized.
+    </>
   )
 }
 ```
