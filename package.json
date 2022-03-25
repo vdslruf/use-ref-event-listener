@@ -1,0 +1,36 @@
+{
+  "name": "@vdslruf/use-ref-event-listener",
+  "version": "0.1.0",
+  "main": "dist/use-ref-event-listener.js",
+  "umd:main": "dist/use-ref-event-listener.umd.js",
+  "module": "dist/use-ref-event-listener.m.js",
+  "source": "src/index.js",
+  "types": "types/index.d.ts",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vdslruf/use-ref-event-listener"
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "prebuild": "npm run lint -- --fix && rimraf dist",
+    "build": "microbundle -o dist/ --sourcemap false --target web",
+    "dev": "microbundle watch -o dist/ --sourcemap false --compress false"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@types/react": "^17.0.43",
+    "eslint": "^8.11.0",
+    "eslint-config-amex": "^15.1.0",
+    "microbundle": "^0.14.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.6.3"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  }
+}
