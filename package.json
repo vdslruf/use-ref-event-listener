@@ -12,6 +12,7 @@
     "url": "https://github.com/vdslruf/use-ref-event-listener"
   },
   "scripts": {
+    "prepublish": "npm run build",
     "lint": "eslint src",
     "prebuild": "npm run lint -- --fix && rimraf dist",
     "build": "microbundle -o dist/ --sourcemap false --target web",
