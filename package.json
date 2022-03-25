@@ -1,6 +1,6 @@
 {
   "name": "@vdslruf/use-ref-event-listener",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/use-ref-event-listener.js",
   "umd:main": "dist/use-ref-event-listener.umd.js",
   "module": "dist/use-ref-event-listener.m.js",
