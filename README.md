@@ -10,10 +10,10 @@ This hook was inspired by [useEventListener](https://github.com/donavon/use-even
 ## Installation
 
 ```bash
-$ npm i @vdslruf/use-ref-event-listener
+npm i @vdslruf/use-ref-event-listener
 ```
 
-## Call it
+## Usage
 
 ```js
 const refObject = useEventListener(eventName, handler, options);
