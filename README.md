@@ -2,9 +2,10 @@
 
 Simple custom hooks for RefObjects
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![npm version](https://badge.fury.io/js/@vdslruf%2Fuse-ref-event-listener.svg)](https://badge.fury.io/js/@vdslruf%2Fuse-ref-event-listener)
 
-This hook was inspired by [useEventListener](https://github.com/donavon/use-event-listener)'
+This hook was inspired by [useEventListener](https://github.com/donavon/use-event-listener)
 
 ## Installation
 
@@ -12,7 +13,7 @@ This hook was inspired by [useEventListener](https://github.com/donavon/use-even
 $ npm i @vdslruf/use-ref-event-listener
 ```
 
-## Usage
+## Call it
 
 ```js
 const refObject = useEventListener(eventName, handler, options);
@@ -23,7 +24,7 @@ const refObject = useEventListener(eventName, handler, options);
 ```js
 function App(){
   const [ state, setState ] = useState('');
-  ////Like native change events, it dispatches when the change is finalized.
+  //Like native change events, it dispatches when the change is finalized.
   const ref = useRefEventListener('change', e => setState(e.target.value));
   return (
     <>
@@ -37,7 +38,7 @@ function App(){
 ```js
 function App(){
   const [ log, setLog ] = useState('');
-  ////Use various DOM API events that React does not support.
+  //Use various DOM API events that React does not support.
   const ref = useRefEventListener('beforeinput', e => setState(e.target.value));
   return (
     <>
