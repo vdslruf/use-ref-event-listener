@@ -16,7 +16,7 @@ npm i @vdslruf/use-ref-event-listener
 ## Usage
 
 ```js
-const refObject = useEventListener(eventName, handler, options);
+const refObject = useRefEventListener(eventName, handler, options);
 ```
 
 ### Parameters
