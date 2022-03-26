@@ -1,6 +1,7 @@
 {
   "name": "@vdslruf/use-ref-event-listener",
-  "version": "0.1.3",
+  "description": "Simple custom hooks for RefObjects",
+  "version": "0.1.4",
   "main": "dist/use-ref-event-listener.js",
   "umd:main": "dist/use-ref-event-listener.umd.js",
   "module": "dist/use-ref-event-listener.m.js",
@@ -33,5 +34,14 @@
   },
   "peerDependencies": {
     "react": ">=16.8.0"
-  }
+  },
+  "keywords": [
+    "react-hooks",
+    "custom-hooks",
+    "react",
+    "utils",
+    "lib",
+    "use-ref",
+    "event-listener"
+  ]
 }
